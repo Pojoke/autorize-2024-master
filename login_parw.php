@@ -1,6 +1,6 @@
 <?php
 $login=[
-"pit","qq",
+"pit","qq","max",
 ];
 
 $passw=[
