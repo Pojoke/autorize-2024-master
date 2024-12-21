@@ -1,7 +1,7 @@
 <?php
 $login_pass=[
-    'login'=>"max",
-    'pass'=>"123",
+   'pit'=>["123", "admin"] ,
+    'vass'=>["3434", "user"]
 ];
 
 // $passw=[
