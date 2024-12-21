@@ -1,8 +1,9 @@
 <?php
-$login=[
-"pit","qq","max",
+$login_pass=[
+    'login'=>"max",
+    'pass'=>"123",
 ];
 
-$passw=[
-"123","65334","65334"
-];
+// $passw=[
+// ,"65334",
+// ];

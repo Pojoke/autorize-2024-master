@@ -15,7 +15,7 @@ if (!isset($_GET['go'])) {
     $_SESSION['login'] = $_GET['login'];
     $_SESSION['passwd'] = $_GET['passwd'];
 // реєструємо змінні login та passwd як глобальні змінні для цієї сесії
-    if ($_GET['login'] == $login[0] && $_GET['passwd'] == $passw[0]) {
+    if ($_GET['login'] == $login_pass['login' ] && $_GET['passwd'] == $login_pass['pass']) {
         $_SESSION['authorized'] = 1;
         header("Location: secret_info.php");
 // перенаправляємо на сторінку secret_info.php
