@@ -1,5 +1,6 @@
 <?php
 include "login_parw.php";
+
 if (session_status() != PHP_SESSION_ACTIVE) {
     session_start();
 }
@@ -15,7 +16,7 @@ if (!isset($_GET['go'])) {
     $_SESSION['login'] = $_GET['login'];
     $_SESSION['passwd'] = $_GET['passwd'];
 // реєструємо змінні login та passwd як глобальні змінні для цієї сесії
-    if ($_GET['login'] = $login_pass['pit']  && $_GET['passwd'] == $login_pass['pit'][0]) {
+    if ($_GET['login'] === $login_pass['pit']  && password_verify("123", $hash) ) {
         $_SESSION['authorized'] = 1;
         header("Location: secret_info.php");
 // перенаправляємо на сторінку secret_info.php
